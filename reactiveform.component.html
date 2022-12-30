@@ -1,0 +1,22 @@
+<div style="text-align: center; color: rgb(98, 79, 79);">
+    <h1>
+        Reactive Forms Demo
+    </h1>
+    <form [formGroup]="student">
+        First Name : <input type="text" formControlName="firstname">
+        <br>
+        Last Name : <input type="text" formControlName="lastname">
+        <br>
+        Age : <input type="text" formControlName="age">
+        <br>
+        ID : <input type="text" formControlName="id">
+        <br>
+        Salary : <input type="text" formControlName="salary">
+        <br>
+        Desig : <input type="text" formControlName="desig">
+        <br><br>
+        <input type="submit" value="Register" class="btn btn-success"
+        [disabled]="student.invalid">
+        <input type="reset" value="reset" class="btn btn-danger">
+    </form>
+    </div>

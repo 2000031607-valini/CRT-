@@ -1,0 +1,53 @@
+<div style="text-align: center;">
+    <h1>Hey Forms Demo</h1>
+    <form #userForm="ngForm">
+        <div class="form-inline">
+            <label style="color: rgb(98, 79, 79);">USER NAME <span style="color: red;" *ngIf="username.invalid">*</span> : </label>
+            <input type="text" class="form-control" required name="username" #username = "ngModel" ngModel> <br>
+            <span *ngIf="username.invalid && username.touched" style="color: red;" >Name is Required!....</span>
+
+        </div>
+        <div class="form-inline">
+            <label style="color: rgb(98, 79, 79)">USER PASS <span style="color: red;" *ngIf="username.invalid">*</span>:</label>
+            <input type="text" class="form-control" required name="userpass" #userpass = "ngModel" ngModel> <br>
+            <span *ngIf="userpass.invalid && userpass.touched" style="color: red;" >Pass is Required!....</span>
+
+        </div>
+        <div class="form-inline">
+            <label style="color: rgb(98, 79, 79)">ID <span style="color: red;" *ngIf="id.invalid">*</span>:</label>
+            <input type="text" class="form-control" required name="id" #id = "ngModel" ngModel> <br>
+            <span *ngIf="id.invalid && id.touched" style="color: red;" >ID is Required!....</span>
+
+        </div>
+        <div class="form-inline">
+            <label style="color: rgb(98, 79, 79)">NAME <span style="color: red;" *ngIf="name.invalid">*</span>:</label>
+            <input type="text" class="form-control" required name="name" #name = "ngModel" ngModel> <br>
+            <span *ngIf="name.invalid && name.touched" style="color: red;" >Name is Required!....</span>
+
+        </div>
+        <div class="form-inline">
+            <label style="color: rgb(98, 79, 79)">AGE <span style="color: red;" *ngIf="age.invalid">*</span>:</label>
+            <input type="text" class="form-control" required name="age" #age = "ngModel" ngModel> <br>
+            <span *ngIf="age.invalid && age.touched" style="color: red;" >Age is Required!....</span>
+
+        </div>
+        <div class="form-inline">
+            <label style="color: rgb(98, 79, 79)">SALARY <span style="color: red;" *ngIf="salary.invalid">*</span>:</label>
+            <input type="text" class="form-control" required name="salary" #salary = "ngModel" ngModel> <br>
+            <span *ngIf="salary.invalid && salary.touched" style="color: red;" >Salary is Required!....</span>
+
+        </div>
+        <div class="form-inline">
+            <label style="color: rgb(98, 79, 79)">DESIG <span style="color: red;" *ngIf="design.invalid">*</span>:</label>
+            <input type="text" class="form-control" required name="design" #design = "ngModel" ngModel> <br>
+            <span *ngIf="design.invalid && design.touched" style="color: red;" >Pass is Required!....</span>
+
+        </div>
+        <br>
+        <input type="submit" value="Login" class="btn btn-success">
+        <input type="reset" value="Reset" class="btn btn-danger">
+
+
+
+    </form>
+</div>

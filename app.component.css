@@ -1,0 +1,10 @@
+h1{
+    color: blueviolet;
+    font-style: oblique;
+    
+
+}
+h2{
+    color: palevioletred;
+    font-style: inherit;
+}

@@ -1,0 +1,16 @@
+<h1> Hi DIRECTIVE</h1>
+
+<h4>
+    <ul *ngFor="let myval of arr">
+        <li>{{myval}}</li>
+    </ul>
+
+    <hr>
+    <input type="text" #fruit>
+    <input type="submit" value="Add Fruit" (click)="add(fruit.value)">
+
+    <ul *ngFor="let f of fruits">
+        <li *ngIf="f=='Apple'">{{f}}</li>
+    </ul>
+
+</h4>
