@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document
+    </title>
+    <style>
+        body{
+            background-image: url('golden.jpg');
+        }
+    </style>
+    
+    <script>
+        function abc(){
+            fn=document.getElementById('fn').value;
+            ln=document.getElementById('ln').value;
+
+            fullname=fn + " "+ln ;
+            document.getElementById('full').value=fullname;
+        }
+        function add()
+        {
+           
+            a=parseInt(  document.getElementById('a').value);
+            b=parseInt(  document.getElementById('b').value);
+
+            c=a + b;
+            document.getElementById('result').value=c;
+       
+        }
+        function sub()
+        {
+           
+            a=parseInt(  document.getElementById('a').value);
+            b=parseInt(  document.getElementById('b').value);
+
+            c=a - b;
+            document.getElementById('result').value=c;
+       
+        }
+        function mul()
+        {
+           
+            a=parseInt(  document.getElementById('a').value);
+            b=parseInt(  document.getElementById('b').value);
+
+            c=a * b;
+            document.getElementById('result').value=c;
+       
+        }
+        function div()
+        {
+           
+            a=parseInt(  document.getElementById('a').value);
+            b=parseInt(  document.getElementById('b').value);
+
+            c=a / b;
+            document.getElementById('result').value=c;
+       
+        }
+        function xyz()
+        {
+            document.getElementById('fn').style.backgroundColor="pink";
+        }
+        
+
+
+    </script>
+    
+</head>
+<body >
+    <Marquee onmouseover="stop()" onmouseout="start()"> <h1 style="color: red;">Welcome to Web App</h1></Marquee>
+        <div style="text-align: center;">
+           
+        
+      <form>
+        FIRST NAME : <input type="text" id="fn" onblur="xyz()"><br>
+        LAST NAME :<input type="text" id="ln"><br>
+        Full name : <input type="text" id="full" onfocus="abc()"><br>
+        <input type="button" onclick="abc()" value="CLICK">
+        <input type="reset">
+      </form>
+
+
+      <form>
+       A  : <input type="text" id="a" ><br>
+       B <input type="text" id="b"><br>
+       Result : <input type="text" id="result"><br>
+        <input type="button" onclick="add()" value="ADD">
+        <input type="button" onclick="sub()" value="SUB">
+        <input type="button" onclick="mul()" value="MUL">
+        <input type="button" onclick="div()" value="DIV">
+        <input type="reset">
+      </form>
+
+        </div>
+        
+
+</body>
+</html>

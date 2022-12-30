@@ -1,0 +1,63 @@
+
+
+
+			Full stack app 
+
+
+
+VS CODE :  https://code.visualstudio.com/download 
+ 
+
+NODE JS  : https://nodejs.org/en/download/ 
+
+
+POSTMAN :  https://www.postman.com/downloads/
+
+
+GIT :      https://git-scm.com/downloads 
+
+
+
+Full stack 											MEAN 						MERN 
+
+Front end :				 
+	
+					HTML 
+					CSS : Bootstracp 
+					JS  :								Angualr.JS 				React.JS 
+Mware : 
+				java 
+						servlet / JSP 				Express.JS 				Expree.JS
+		Server : Tomcat 								node.js 					Node.js 	
+				Python : 
+						Django / Flask 
+		Server: http 
+				.net :
+				
+		Server: IIS 
+
+Back End : 
+					Mysql 							MangoDB 					MongoDB 
+					Oracle 
+
+
+
+
+echo "# KLUB2" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Thaneshwara848/KLUB2.git
+git push -u origin main
+
+
+
+
+
+
+
+
+
+
+
